@@ -1,0 +1,48 @@
+    .integratedInputCContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .inputcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+    
+    .Labels {
+        display: flex;
+        width: 9vw;
+        height: 2rem;
+        align-items: center;
+        justify-content: left;
+        background-color: whitesmoke;
+    }
+    
+    .Input {
+        width: 15vw;
+        height: 2rem;
+    }
+    
+    .custom {
+        display: flex;
+        width: 9rem;
+        height: 2rem;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .textContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .text {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }

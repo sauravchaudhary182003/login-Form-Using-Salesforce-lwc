@@ -1,0 +1,67 @@
+.userName {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    width: 18rem;
+    height: 1.8rem;
+}
+
+.userNameText {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 6rem;
+    height: 1.8rem;
+}
+
+.userNameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UsernameContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.loginContainer {
+    justify-content: center;
+    display: flex;
+}
+
+.login {
+    width: 24rem;
+    height: 1.8rem;
+}
+
+.userNameBold {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputOtp {
+    width: 24rem;
+    height: 1.8rem;
+}
+
+
+/* .sendOtp {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 7rem;
+    height: 1.8rem;
+} */
+
+.boldUserName {
+    font-size: 1rem;
+    font-weight: 450;
+}

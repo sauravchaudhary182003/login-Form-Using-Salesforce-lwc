@@ -1,0 +1,201 @@
+<template>
+    <lightning-card>
+        <div class="textContainer">
+            <div class="slds-p-around_xx-small"><p class="text">Register Now</p></div>
+        </div>
+        <!--inputs-->
+        <!--first Name-->
+        <div class="container">
+            <div class="integratedInputCContainer">
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="firstName">First Name </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="Text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First Name"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+                <!--Last Name input-->
+
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="lastName">Last Name <abbr
+                                class="slds-required"
+                                title="required">* </abbr> </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="Text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last name"
+                            required
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+            </div>
+            <!--Email input-->
+            <div class="integratedInputCContainer">
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="emailInput">E-mail <abbr
+                                class="slds-required"
+                                title="required">* </abbr>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="email"
+                            id="emailInput"
+                            name="Email"
+                            placeholder="E-mail"
+                            required
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+                <!--Job Title Input-->
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="jobTitle">Job Title <abbr
+                                class="slds-required"
+                                title="required">* </abbr> </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="Text"
+                            id="jobTitle"
+                            name="JobTitle"
+                            placeholder="Job Title"
+                            required=true;
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+            </div>
+            <!--Company Name input-->
+            <div class="integratedInputCContainer">
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="companyName">Company Name
+                        </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="text"
+                            id="companyName"
+                            name="Company"
+                            placeholder="Company Name"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+                <!--Number of employees-->
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="numberOfEmployee">Number Of
+                            Employee
+                        </label>
+                    </div>
+
+                    <div>
+                        <input class="Input slds-input"
+                            type="number"
+                            id="numberOfEmployee"
+                            name="EmployeeNumber"
+                            placeholder="Number of Employee"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+            </div>
+
+            <!--Country -->
+
+            <div class="integratedInputCContainer">
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="country">Country
+                        </label>
+                    </div>
+
+                    <div>
+                        <input class="Input slds-input"
+                            type="Text"
+                            id="country"
+                            name="Country"
+                            placeholder="Country"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+                <!-- Phone input -->
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="phone">Phone <abbr class="slds-required"
+                                title="required">* </abbr>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="Phone"
+                            id="phone"
+                            name="Phone"
+                            placeholder="Phone"
+                            required=true;
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+            </div>
+            <!-- password-->
+            <div class="integratedInputCContainer">
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="password">Password <abbr
+                                class="slds-required"
+                                title="required">* </abbr>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="password"
+                            id="password"
+                            name="Password"
+                            required
+                            placeholder="Password"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+
+                <div class="inputcontainer">
+                    <div class="Labels">
+                        <label for="Confirmpassword">Confirm Password <abbr
+                                class="slds-required"
+                                title="required">* </abbr>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="Input slds-input"
+                            type="password"
+                            id="Confirmpassword"
+                            name="ConfirmPassword"
+                            required
+                            placeholder="Confirm Password"
+                            onchange={userInformationSaveHandler}>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <div class="slds-p-around_xx-small">
+                    <button class="slds-button slds-button_brand"
+                        onclick={newUserCancel}>Cancel</button>
+                </div>
+                <div class="slds-p-around_xx-small">
+                    <button class="slds-button slds-button_brand"
+                        onclick={newUserSave}>Save</button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

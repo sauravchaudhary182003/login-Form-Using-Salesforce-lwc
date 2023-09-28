@@ -1,0 +1,41 @@
+<template>
+    <lightning-card>
+        <div>
+            <div class="UsernameContainer slds-p-bottom_small">
+                <div class="userNameContainer">
+                    <div class="userNameText">
+                        <p class="userNameBold">Username :</p>
+                    </div><div class="userName">
+                        <p class="boldUserName">{usernameonly}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="inputOtp">
+                    <input class="inputOtp"
+                        type="text"
+                        placeholder="Enter Your OTP"
+                        onchange={handleChange}>
+
+                </div>
+            </div>
+
+            <!-- </div> -->
+
+            <c-captcha-verification onsenddata={flag}>
+            </c-captcha-verification>
+
+            <div
+                class="loginContainer slds-p-top_xx-small slds-p-bottom_xx-small">
+                <div class="login">
+                    <button
+                        class="login slds-button slds-button_brand "
+                        onclick={handleClick}>Login</button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,31 @@
+<template>
+
+    <!-- Main Screen component-->
+    <template if:true={isMainScreenVisible}>
+        <c-main-login-screen
+            onnewuser={newusers}
+            onuserdata={userData}
+            oncaptcha={captcha}
+            ononlyusername={onlyUsername}
+            onloginotp={otpLogin}>
+        </c-main-login-screen>
+
+    </template>
+    <!-- New user Component-->
+    <template if:true={isNewuserVisible}>
+        <c-new-user onback={handleBack} onsave={handleNewUserSave}></c-new-user>
+    </template>
+    <!--password visible component-->
+    <template if:true={isPasswordVisible}>
+        <c-login-with-password userdata={dataToPass}
+            onuserloginvisisble={userMainScreen} usernameonly={onlyUserNames}></c-login-with-password>
+    </template>
+
+    <template if:true={isMainUserLoginScreenVisible}>
+        <c-user-login-screen></c-user-login-screen>
+    </template>
+    <template if:true={isOtpVisible}>
+        <c-login-with-otp usernameonly={onlyUserNames}
+            onuserloginvisisble={userMainScreen}></c-login-with-otp>
+    </template>
+</template>

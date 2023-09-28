@@ -1,0 +1,46 @@
+.container {}
+
+.newUserContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUser {
+    width: 15.34rem;
+}
+
+.usernameInputContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.usernameInput {
+    width: 14.345rem;
+    height: 1.8rem;
+}
+
+.usernameInput input::placeholder {
+    text-align: center;
+}
+
+.loginWithPasswordContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.loginWithPassword {
+    width: 15.34rem;
+}
+
+.loginWithOtpContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.loginWithOtp {
+    width: 15.34rem;
+}

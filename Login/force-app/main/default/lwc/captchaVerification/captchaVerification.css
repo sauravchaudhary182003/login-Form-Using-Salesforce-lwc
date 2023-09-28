@@ -1,0 +1,19 @@
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .inputCaptcha {
+        width: 16rem;
+        height: 1.8rem;
+    }
+    
+    .captcha {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 7rem;
+        height: 1.8rem;
+        background-color: wheat;
+    }

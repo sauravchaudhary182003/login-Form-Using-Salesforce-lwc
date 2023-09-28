@@ -1,0 +1,41 @@
+<template>
+    <lightning-card><div class="container">
+            <div class="newUserContainer">
+                <div class="newUser slds-p-around_x-small">
+                    <button
+                        class=" slds-button_stretch slds-button slds-button_brand"
+                        name="newUser"
+                        onclick={handleClick}>New User</button>
+                </div>
+            </div>
+            <div
+                class="usernameInputContainer slds-p-around_x-small">
+                <div class="usernameInput">
+                    <input class="usernameInput"
+                        type="text"
+                        placeholder="Username"
+                        name="InputChange"
+                        onchange={handleInputChange}>
+                </div>
+            </div>
+            <div class="loginWithPasswordContainer">
+                <div class="loginWithPassword slds-p-around_x-small">
+                    <button
+                        class="slds-button_stretch slds-button slds-button_brand "
+                        name="loginUsingPassword"
+                        onclick={handleClick}>Login With Password
+                    </button>
+                </div>
+            </div>
+            <div class="loginWithOtpContainer">
+                <div class="loginWithOtp slds-p-around_x-small">
+                    <button
+                        class="slds-button_stretch slds-button slds-button_brand"
+                        name="loginUsingOtp"
+                        onclick={handleClick}>Login With Otp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

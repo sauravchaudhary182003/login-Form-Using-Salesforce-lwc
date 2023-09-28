@@ -1,0 +1,13 @@
+<!-- captchaComponent.html -->
+<template><lightning-card>
+        <div class="container">
+            <div class="inputCaptcha">
+                <input class="inputCaptcha" type="text"
+                    placeholder="Enter CAPTCHA"
+                    value={userInput} oninput={validateCaptcha}/>
+            </div>
+            <div class="slds-p-left_medium">
+                <div class="captcha">{captchaText}</div>
+            </div> </div>
+    </lightning-card>
+</template>
